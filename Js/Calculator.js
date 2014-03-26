@@ -114,5 +114,23 @@
         self.expression(self.expression() + buttonID);
     }
 
-    
+    //THE FOLLOWING ARE JUST BUTTON CLICK EVENTS TO SEPARATE CONCERNS
+    self.oneClicked = function () { self.numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.ONE) }
+    self.twoClicked = function () { self.numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.TWO) }
+    self.threeClicked = function () { self.numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.THREE) }
+    self.fourClicked = function () { self.numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.FOUR) }
+    self.fiveClicked = function () { self.numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.FIVE) }
+    self.sixClicked = function () { self.numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.SIX) }
+    self.sevenClicked = function () { self.numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.SEVEN) }
+    self.eightClicked = function () { self.numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.EIGHT) }
+    self.nineClicked = function () { self.numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.NINE) }
+    self.zeroClicked = function () { self.numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.ZERO) }
+
+    self.plusClicked = function () { self.functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.PLUS) }
+    self.minusClicked = function () { self.functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.MINUS) }
+    self.multiplyClicked = function () { self.functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.MULTIPLY) }
+    self.devideClicked = function () { self.functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.DEVIDE) }
+    self.dotClicked = function () { self.functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.DECIMAL_POINT) }
+    self.equalsClicked = function () { self.functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.EQUALS) }
+    self.resetClicked = function () { self.functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.RESET) }
 }
