@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ARIA Project</title>
+
+    <script src="/Js/jquery-2.1.0.js"></script>
+    <script src="/Js/knockout-2.2.0.debug.js"></script>
+    <script src="/Js/skel.min.js"></script>
+
+    <script src="/Js/Utils.js"></script>
+    <script src="/Js/Calculator.js"></script>
+
+    <script src="/Js/boot.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Header -->
+        <div id="header" class="row">
+            <div class="4u">
+                <h1>Example</h1>
+            </div>
+            <nav id="nav" class="8u">
+                <a href="#">Home</a>
+                <a href="#">About Me</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+
+        <!-- Hero -->
+        <section id="hero">
+            <h2>Hello world.</h2>
+            <p>Lorem ipsum dolor sit amet sed magna etiam adipiscing.</p>
+            <a href="#" class="button">Get Started</a>
+        </section>
+
+        <!-- Features -->
+        <!--<div class="row">
+            <section class="-3u">
+                <h2>Input</h2>
+                <input type="text" id="txtInput" data-bind="value: dataInput" />
+                <select id="ddlinput" data-bind="options: convertionOptions, value: convertType, optionsText: 'description', optionsValue: 'id'">                   
+                </select>
+            </section>
+
+            <section class="4u">               
+            </section>
+
+            <section class="4u">        
+                <div class="results">
+                    <h2>
+                        Result is: <span data-bind="text:result"></span>
+                    </h2>
+                </div>       
+            </section>
+        </div>-->
+
+        <div class="row">
+            <section class="-3u">                
+                <input type="text" id="txtInput" data-bind="value: expression" />
+                
+                <table>
+                    <tr>
+                        <td>
+                            <input type="button" value="7" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.SEVEN) }" />
+                        </td>
+                        <td>
+                            <input type="button" value="8" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.EIGHT) }" />
+                        </td>
+                           <td>
+                            <input type="button" value="9" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.NINE) }" />
+                        </td>
+                         <td>
+                            <input type="button" value="/" data-bind="click: function () { functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.DEVIDE) }" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="button" value="4" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.FOUR) }" />
+                        </td>
+                        <td>
+                            <input type="button" value="5" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.FIVE) }" />
+                        </td>
+                           <td>
+                            <input type="button" value="6" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.SIX) }" />
+                        </td>
+                        <td>
+                            <input type="button" value="*" data-bind="click: function () { functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.MULTIPLY) }" />
+                        </td>
+                    </tr>
+
+                     <tr>
+                        <td>
+                            <input type="button" value="1" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.ONE) }" />
+                        </td>
+                        <td>
+                            <input type="button" value="2" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.TWO) }" />
+                        </td>
+                           <td>
+                            <input type="button" value="3" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.THREE) }" />
+                        </td>
+                         <td>
+                            <input type="button" value="-" data-bind="click: function () { functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.MINUS) }" />
+                        </td>
+                    </tr>
+
+                     <tr>
+                        <td>
+                            <input type="button" value="0" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.ZERO) }" />
+                        </td>
+                        <td>
+                            <input type="button" value="." data-bind="click: function () { functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.DECIMAL_POINT) }" />
+                        </td>
+                           <td>
+                            <input type="button" value="=" data-bind="click: function () { functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.EQUALS) }" />
+                        </td>
+                         <td>
+                            <input type="button" value="+" data-bind="click: function () { functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.PLUS) }" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" value="Reset" data-bind="click: function () { functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.RESET) }" />
+                        </td>
+                        <td>
+                            
+                        </td>
+                           <td>
+                            
+                        </td>
+                         <td>
+                            
+                        </td>
+                    </tr>
+
+                </table>
+            </section>
+
+            <section class="4u">
+            </section>
+
+            <section class="4u">
+              
+            </section>
+        </div>
+
+
+
+        <!-- Footer -->
+        <div id="footer">
+            © Example. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
