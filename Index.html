@@ -56,94 +56,61 @@
             </section>
         </div>-->
 
-        <div class="row">
-            <section class="-3u">                
-                <input type="text" id="txtInput" data-bind="value: expression" />
-                
-                <table>
-                    <tr>
-                        <td>
-                            <input type="button" value="7" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.SEVEN) }" />
-                        </td>
-                        <td>
-                            <input type="button" value="8" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.EIGHT) }" />
-                        </td>
-                           <td>
-                            <input type="button" value="9" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.NINE) }" />
-                        </td>
-                         <td>
-                            <input type="button" value="/" data-bind="click: function () { functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.DEVIDE) }" />
-                        </td>
-                    </tr>
+        <div class="row calculator">
+            <section class="-3u">
+                <input type="text" class="result" id="txtInput" data-bind="value: expression" />
 
-                    <tr>
-                        <td>
-                            <input type="button" value="4" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.FOUR) }" />
-                        </td>
-                        <td>
-                            <input type="button" value="5" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.FIVE) }" />
-                        </td>
-                           <td>
-                            <input type="button" value="6" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.SIX) }" />
-                        </td>
-                        <td>
-                            <input type="button" value="*" data-bind="click: function () { functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.MULTIPLY) }" />
-                        </td>
-                    </tr>
+                <div class="buttons">
+                    <div class="calc_row">
 
-                     <tr>
-                        <td>
-                            <input type="button" value="1" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.ONE) }" />
-                        </td>
-                        <td>
-                            <input type="button" value="2" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.TWO) }" />
-                        </td>
-                           <td>
-                            <input type="button" value="3" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.THREE) }" />
-                        </td>
-                         <td>
-                            <input type="button" value="-" data-bind="click: function () { functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.MINUS) }" />
-                        </td>
-                    </tr>
+                        <a class="button" href="#" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.SEVEN) }" >7</a>
+                        <a class="button" href="#" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.EIGHT) }" >8</a>
+                        <a class="button" href="#" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.NINE) }" 9
+                        <a class="button" href="#" data-bind="click: function () { functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.DEVIDE) }" >/</a>
 
-                     <tr>
-                        <td>
-                            <input type="button" value="0" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.ZERO) }" />
-                        </td>
-                        <td>
-                            <input type="button" value="." data-bind="click: function () { functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.DECIMAL_POINT) }" />
-                        </td>
-                           <td>
-                            <input type="button" value="=" data-bind="click: function () { functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.EQUALS) }" />
-                        </td>
-                         <td>
-                            <input type="button" value="+" data-bind="click: function () { functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.PLUS) }" />
-                        </td>
-                    </tr>
+                    </div>
 
-                    <tr>
-                        <td colspan="2">
-                            <input type="button" value="Reset" data-bind="click: function () { functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.RESET) }" />
-                        </td>
-                        <td>
-                            
-                        </td>
-                           <td>
-                            
-                        </td>
-                         <td>
-                            
-                        </td>
-                    </tr>
+                    <div class="calc_row">
+                        <a class="button" href="#" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.FOUR) }" >4</a>
 
-                </table>
+                        <a class="button" href="#" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.FIVE) }" >5</a>
+
+                        <a class="button" href="#" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.SIX) }" >6</a>
+
+                        <a class="button" href="#" data-bind="click: function () { functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.MULTIPLY) }" >*</a>
+                    </div>
+
+                    <div class="calc_row">
+                        <a class="button" href="#" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.ONE) }" >1</a>
+
+                        <a class="button" href="#" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.TWO) }" >2</a>
+
+                        <a class="button" href="#" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.THREE) }" >3</a>
+
+                        <a class="button" href="#" data-bind="click: function () { functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.MINUS) }" >-</a>
+                    </div>
+
+                    <div class="calc_row">
+                        <a class="button" href="#" data-bind="click: function () { numberButtonClick(CalcUtils.NUMBER_BUTTON_TYPES.ZERO) }" >0</a>
+
+                        <a class="button" href="#" data-bind="click: function () { functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.DECIMAL_POINT) }" >.</a>
+
+                        <a class="button" href="#" data-bind="click: function () { functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.EQUALS) }" >=</a>
+
+                        <a class="button" href="#" data-bind="click: function () { functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.PLUS) }" >+</a>
+                    </div>
+
+                    <div class="calc_row">
+                        <a class="btn_reset button" href="#" data-bind="click: function () { functionButtonClick(CalcUtils.FUNCTION_BUTTON_TYPES.RESET) }" >Reset</a>
+                    </div>
+
+                </div>
             </section>
 
             <section class="4u">
             </section>
 
             <section class="4u">
-              
             </section>
         </div>
 

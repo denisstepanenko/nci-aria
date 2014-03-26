@@ -1,0 +1,5 @@
+C:\Users\Denis\Documents\Projects\NCI\ARIA\Projects\InClass Exam\Template\Template\bin\Template.dll
+C:\Users\Denis\Documents\Projects\NCI\ARIA\Projects\InClass Exam\Template\Template\bin\Template.pdb
+C:\Users\Denis\Documents\Projects\NCI\ARIA\Projects\InClass Exam\Template\Template\obj\Debug\Template.csprojResolveAssemblyReference.cache
+C:\Users\Denis\Documents\Projects\NCI\ARIA\Projects\InClass Exam\Template\Template\obj\Debug\Template.dll
+C:\Users\Denis\Documents\Projects\NCI\ARIA\Projects\InClass Exam\Template\Template\obj\Debug\Template.pdb
