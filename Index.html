@@ -17,7 +17,7 @@
 
         <!-- Header -->
         <div id="header" class="row">
-            <div class="4u">
+            <!--<div class="4u">
                 <h1>Example</h1>
             </div>
             <nav id="nav" class="8u">
@@ -25,85 +25,52 @@
                 <a href="#">About Me</a>
                 <a href="#">Blog</a>
                 <a href="#">Contact</a>
-            </nav>
+            </nav>-->
+            <br />
         </div>
 
         <!-- Hero -->
         <section id="hero">
-            <h2>Hello world.</h2>
-            <p>Lorem ipsum dolor sit amet sed magna etiam adipiscing.</p>
-            <a href="#" class="button">Get Started</a>
+            <h2>Hello Calculator!</h2>
+            
         </section>
-
-        <!-- Features -->
-        <!--<div class="row">
-            <section class="-3u">
-                <h2>Input</h2>
-                <input type="text" id="txtInput" data-bind="value: dataInput" />
-                <select id="ddlinput" data-bind="options: convertionOptions, value: convertType, optionsText: 'description', optionsValue: 'id'">                   
-                </select>
-            </section>
-
-            <section class="4u">               
-            </section>
-
-            <section class="4u">        
-                <div class="results">
-                    <h2>
-                        Result is: <span data-bind="text:result"></span>
-                    </h2>
-                </div>       
-            </section>
-        </div>-->
-
+        
         <div class="row calculator">
-            <section class="-3u">
+            <section class="-5u">
                 <input type="text" class="result" id="txtInput" data-bind="value: expression" />
 
                 <div class="buttons">
                     <div class="calc_row">
-
                         <a class="button" href="#" data-bind="click: sevenClicked">7</a>
                         <a class="button" href="#" data-bind="click: eightClicked">8</a>
                         <a class="button" href="#" data-bind="click: nineClicked">9</a>
                         <a class="button" href="#" data-bind="click: devideClicked">/</a>
-
                     </div>
 
                     <div class="calc_row">
                         <a class="button" href="#" data-bind="click: fourClicked">4</a>
-
                         <a class="button" href="#" data-bind="click: fiveClicked">5</a>
-
                         <a class="button" href="#" data-bind="click: sixClicked">6</a>
-
                         <a class="button" href="#" data-bind="click: multiplyClicked">*</a>
                     </div>
 
                     <div class="calc_row">
                         <a class="button" href="#" data-bind="click: oneClicked ">1</a>
-
                         <a class="button" href="#" data-bind="click: twoClicked">2</a>
-
                         <a class="button" href="#" data-bind="click: threeClicked">3</a>
-
                         <a class="button" href="#" data-bind="click: minusClicked">-</a>
                     </div>
 
                     <div class="calc_row">
                         <a class="button" href="#" data-bind="click: zeroClicked">0</a>
-
                         <a class="button" href="#" data-bind="click: dotClicked">.</a>
-
                         <a class="button" href="#" data-bind="click: equalsClicked">=</a>
-
                         <a class="button" href="#" data-bind="click: plusClicked">+</a>
                     </div>
 
                     <div class="calc_row">
                         <a class="btn_reset button" href="#" data-bind="click: resetClicked">Reset</a>
                     </div>
-
                 </div>
             </section>
 
